@@ -1,23 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Dhome from './home/d_home/d_home';
+import Home from './home/home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Dlogement from './home/d_logement/d_logement';
-import Header from './components/header/d_header/d_header';
-import Footer from './components/footer/d_footer/d_footer';
-import Error from './components/erreur/d_404/d_404';
+import Logement from './home/logement/logement';
+import Header from './home/header/header';
+import Footer from './components/footer/footer';
+import Error from './components/erreur/404';
+import Apropos from './home/apropos/apropos';
 
- 
 ReactDOM.render(
     <React.StrictMode>
       <Router>
+        <Header />
           <Routes>
-            <Route path="/" element={<Dhome />} />
-            <Route>
-            <Dhome />
-          </Route>
+            <Route path="/Home" element={<Home />} />
+            <Route path="/Logement" element={<Logement />} />
+            <Route path="/Apropos" element={<Apropos />} />
+            <Route path="*" element={<Error />} />
           </Routes>
-          
+          <Footer />
         </Router>
     </React.StrictMode>,
 document.getElementById('root')

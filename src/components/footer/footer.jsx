@@ -1,4 +1,4 @@
-import Footer from '../../../asset/images/d_images/d_footer.png';
+import Footer from '../../asset/images/d_images/d_footer.png';
 
 function Dfooter() {
 return (

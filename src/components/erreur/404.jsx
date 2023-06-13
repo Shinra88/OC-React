@@ -1,11 +1,11 @@
-import Erreur from '../../../asset/images/d_images/d_404.png';
+import Erreur from '../../asset/images/d_images/d_404.png';
 
 
 function Error() {
 return (
     <div>
       <h2>Oups...</h2>
-      <img src={Erreur} />
+      <img src={Erreur} alt='erreur'/>
       <p>
         Il semblerait que la page que vous cherchez n’existe pas
       </p>
