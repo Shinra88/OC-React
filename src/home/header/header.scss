@@ -7,13 +7,6 @@
 
     .logo_contener{
         width: 20%;
-        .logok{
-            padding-right: 5px;
-        }
-        
-        .logoAlogo, .logos, .logoa{
-            padding-right: 12px;
-        }
     }
 
     nav{
@@ -37,3 +30,10 @@
     }
 }
 
+.Home:active{
+    text-decoration: underline;
+}
+
+.Apropos:active{
+    text-decoration: underline;
+}

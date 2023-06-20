@@ -9,35 +9,6 @@ import { useState } from 'react'
 
 
 
-// function Home() {
-
-//   const [appartements, setAppartement] = useState([]);
-
-//   useEffect(fetchAppartements, []);
-
-// function fetchAppartements() {
-// fetch("./backend.json")
-// .then((res) => res.json())
-// .then((res) => setAppartement(res))
-// .catch(console.error);
-// }
-
-//   return (
-//       <main className="Home">
-//         <div className="Home-banner">
-//           <h2>Chez vous, partout et ailleurs</h2>
-//         <img src={Banner} className="banner" alt="logo" />
-//         </div>
-//         <div className='Home-Contener'>
-//            {appartements.map((appartement) => (
-//            <Card title={appartement.title} />))}
-//            <Card />
-//         </div>
-//         </main>
-    
-//   );
-// }
-
 function Home() {
 
   const [appartements, setAppartement] = useState([]);
@@ -45,7 +16,7 @@ function Home() {
   useEffect(fetchAppartements, []);
 
 function fetchAppartements() {
-fetch("./backend.json")
+fetch("/backend.json")
 .then((res) => res.json())
 .then((res) => setAppartement(res))
 .catch(console.error);
@@ -59,9 +30,7 @@ fetch("./backend.json")
         </div>
         <div className='Home-Contener'>
            {appartements.map((appartement) => (
-            <div>{appartement.title} </div>
-            ))}
-           
+            <Card key={appartement} title={appartement.title} imageUrl={appartement.cover} />))}
         </div>
         </main>
     

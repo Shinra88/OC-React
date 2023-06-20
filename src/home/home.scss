@@ -1,5 +1,5 @@
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
 
 main{
     display: flex;
@@ -20,39 +20,34 @@ main{
         
     }
 
-    .Home-banner{
-        display: flex;
-        height: 223px;
-        border-radius: 25px;
-        justify-content: center;
-        background-color: #000000;
-
-        .banner{
-        display: flex;
-        justify-content: center;
-        z-index: 1;
-        width: 100%;
-        border-radius: 25px;
-        object-fit: cover;
-        opacity: 0.7;
-        }
-    }
+    
     
     .Home-Contener{
-        // display: grid;
-        // grid-template-columns: repeat(4, 1fr);
-        // grid-gap: 10px;
-        // grid-auto-rows: minmax(100px, auto);
-
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-        margin-bottom: 50px;
-        height: 829px;
-        margin-top: 43px;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 60px;
+        grid-auto-rows: minmax(100px, auto);
         background: #F7F7F7;
         border-radius: 25px;
+        padding: 56px 50px 43px 50px;
+        margin-top: 43px;
     }
 }
 
+.Home-banner{
+    display: flex;
+    height: 223px;
+    border-radius: 25px;
+    justify-content: center;
+    background-color: #000000;
+
+    .banner{
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    width: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+    opacity: 0.7;
+    }
+}
