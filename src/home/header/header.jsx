@@ -3,6 +3,7 @@ import logoAlogo from '../../asset/images/d_images/d_Alogo.png';
 import logos from '../../asset/images/d_images/d_s.png';
 import logoa from '../../asset/images/d_images/d_a.png';
 import { Link } from 'react-router-dom'
+import styled from 'styled-components'
 import './header.scss';
 
 function Header() {
@@ -16,7 +17,7 @@ function Header() {
         </div>
         <nav>
           <ul>
-          <Link to="/Home" id='Home'>Accueil</Link>
+          <Link to="/Home" className='Home'>Accueil</Link>
           <Link to="/Apropos" id='Apropos'>A Propos</Link>
           </ul>
         </nav>
@@ -24,5 +25,13 @@ function Header() {
       
     )
   }
+function underApropos(){
+  if(window.location.pathname === '/Apropos'){
+    const LinkApropos = styled.link`
+    cursor: default;
+      text-decoration: underline;
+  `}
+}
+underApropos()
 
 export default Header

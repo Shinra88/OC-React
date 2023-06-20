@@ -1,15 +1,21 @@
 import './apropos.scss';
+import Collapse from '../../components/collapse/collapse';
+import AproposBanner from '../../asset/images/d_images/d_apropos_banner.png';
 
 function Apropos() {
     return (
       <div className="apropos">
-        <h1>test A Propos</h1>
+        <div className='apropos_banner'>
+          <img className='banner' src={AproposBanner} alt='banner apropos'></img>
+        </div>
+        <div className='collapse__contener'>
+          <Collapse title="Fiabilité" content="Fiabilité"/>
+          <Collapse title="Respect" content="Respect"/>
+          <Collapse title="Service" content="Service"/>
+          <Collapse title="Sécurité" content="Sécurité"/>
+        </div>
       </div>
+     
     );
   }
-  const Home = document.getElementById('Home');
-// Récupère le style CSS de #intro
-let styleHome = window.getComputedStyle(Home);
-// Affiche la valeur de la propriété CSS top de #intro
-console.log( styleHome.getPropertyValue('text-decoration') ); // "underline"
 export default Apropos;

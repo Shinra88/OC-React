@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
 .header_contener {
     display: flex;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    justify-content: center;
+    margin: 50px 100px 50px 100px;
 
     .logo_contener{
         width: 20%;
@@ -9,15 +11,7 @@
             padding-right: 5px;
         }
         
-        .logoAlogo{
-            padding-right: 12px;
-        }
-
-        .logos{
-            padding-right: 12px;
-        }
-
-        .logoa{
+        .logoAlogo, .logos, .logoa{
             padding-right: 12px;
         }
     }

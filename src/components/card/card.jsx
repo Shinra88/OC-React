@@ -1,9 +1,11 @@
-import Card from '../../../asset/images/d_images/d_card.png';
 
-function Card() {
+import React from 'react';
+import "./card.scss";
+
+function Card(props) {
 return (
-        <div>
-            <img src={Card} className='card' alt='card' />
+        <div className='card'>
+            <div className='card__titre'>{props.title}</div>
         </div>
         );
 }

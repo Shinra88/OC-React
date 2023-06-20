@@ -1,15 +1,14 @@
-import Erreur from '../../asset/images/d_images/d_404.png';
+import './404.scss';
+import { Link } from 'react-router-dom'
 
 
 function Error() {
 return (
-    <div>
-      <h2>Oups...</h2>
-      <img src={Erreur} alt='erreur'/>
-      <p>
-        Il semblerait que la page que vous cherchez n’existe pas
-      </p>
-    </div>
+    <div className='error_contener'>
+      <h2 className='error_h2'>404</h2>
+      <p className='error_p'>Oups! La page que vous demandez n'existe pas.</p>
+      <Link to="/Home" className='error_home'>Retourner sur la page d’accueil</Link>
+      </div>
   );
 }
 
