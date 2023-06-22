@@ -6,9 +6,6 @@ import Card from '../components/card/card';
 import './home.scss';
 import { useState } from 'react'
 
-
-
-
 function Home() {
 
   const [appartements, setAppartement] = useState([]);
@@ -21,7 +18,6 @@ fetch("/backend.json")
 .then((res) => setAppartement(res))
 .catch(console.error);
 }
-
   return (
       <main className="Home">
         <div className="Home-banner">
@@ -30,7 +26,10 @@ fetch("/backend.json")
         </div>
         <div className='Home-Contener'>
            {appartements.map((appartement) => (
-            <Card key={appartement} title={appartement.title} imageUrl={appartement.cover} />))}
+            <Card key={appartement} 
+                  title={appartement.title} 
+                  imageUrl={appartement.cover} 
+                  id={appartement.id} />))}
         </div>
         </main>
     

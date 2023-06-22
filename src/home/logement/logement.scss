@@ -1,3 +1,123 @@
-.Logement_banner{
-    border-radius: 25px;
+.loading{
+
 }
+
+.logement{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 100px 0px 100px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+}
+
+.logement__contener{
+    display: flex;
+}
+
+.logement__infos{
+display: flex;
+flex-direction: column;
+width: 50%;
+
+    .logement__titre{
+              
+        color: #FF6060;
+        h2, p{
+            font-size: 36px;
+            font-weight: normal;
+        }
+        p{
+            font-size: 18px; 
+        }
+    }
+    
+    .logement__tag{
+        display: inline-block;
+        min-width: 115px;
+        background: #FF6060;
+        border-radius: 16px;
+        font-size: 14px;
+        text-align: center;
+        color: white;
+        padding: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+}
+
+.logement__hotes{
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 50%;
+align-items: flex-end;
+
+    .logement__profil{
+        display: flex;
+        
+        .logement__nom{
+            width: 100px;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            text-align: end;
+            padding: 10px;
+            color: #FF6060;                     
+        }
+    
+        .logement__photo img{
+            height: 80px;
+            border-radius: 100px;            
+        }
+    }
+    
+    .logement__stars{
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px 0px 0px 0px;
+        font-size: 24px;
+        height: 24px;
+        width: 50%;
+
+        .off{
+            padding-left: 15px;
+            width: 24px;
+            height: 24px;
+            color: gray;
+            }
+            
+        .on{
+            padding-left: 15px;
+            width: 24px;
+            height: 24px;
+            color: #FF6060;
+        }
+    }
+}
+
+.logement__details{
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-between;
+    
+    
+
+    .collapse.false{
+        flex-basis: 47%;
+        padding-bottom: 50px;
+    }
+
+    .collapse.title{
+        
+    }
+
+    .collapse.active{
+
+        flex-basis: 47%;
+    }
+}
+
+
+

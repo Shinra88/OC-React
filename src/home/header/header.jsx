@@ -10,8 +10,17 @@ function Header() {
         </div>
         <nav>
           <ul>
-          <NavLink to="/" className='Home'>Accueil</NavLink>
-          <NavLink to="/Apropos" className='Apropos'>A Propos</NavLink>
+          <NavLink to="/" 
+          style={({ isActive }) => isActive ? { textDecoration: "underline" } : undefined} 
+          className='Home'>
+          Accueil
+          </NavLink>
+
+          <NavLink to="/Apropos" 
+          style={({ isActive }) => isActive ? { textDecoration: "underline" } : undefined} 
+          className='Apropos'>
+          A Propos
+          </NavLink>
           </ul>
         </nav>
       </div>

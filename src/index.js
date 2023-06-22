@@ -9,6 +9,7 @@ import Apropos from './home/apropos/apropos';
 import "./style.scss";
 import { createRoot } from 'react-dom/client';
 
+
 const container = document.getElementById('root');
 const root = createRoot(container); // createRoot(container!) if you use TypeScript
 root.render(
