@@ -26,7 +26,7 @@ fetch("/backend.json")
         </div>
         <div className='Home-Contener'>
            {appartements.map((appartement) => (
-            <Card key={appartement} 
+            <Card key={appartement.id} 
                   title={appartement.title} 
                   imageUrl={appartement.cover} 
                   id={appartement.id} />))}

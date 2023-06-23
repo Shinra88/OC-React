@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { useLocation } from 'react-router-dom';
 import { ImageBanner } from '../../components/carrousel/carrousel';
+import Loading from '../../asset/images/loading.gif';
 
 function Logement() {
 
@@ -27,7 +28,9 @@ function Logement() {
 
   if (Appartement == null) return 
   
-  <div className='loading'>...Loading</div>
+  <div className='loading'>
+    <img src={Loading} alt="loading" />
+  </div>
 
   return (
 
@@ -36,7 +39,7 @@ function Logement() {
 
         <div className='logement__contener'>
           <div className='logement__infos'>
-            <div className='logement__titre' Appartement={Appartement}>
+            <div className='logement__titre'>
               <h2>{Appartement.title}</h2>
               <p>{Appartement.location}</p>
             </div>
