@@ -2,18 +2,19 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
     margin: 0px 100px 0px 100px;
+    @media screen and (max-width: 390px){
+        margin: 0px 10px 0px 10px;
+    }
 }
 .apropos_banner{
     display: flex;
-    
     height: 223px;
     border-radius: 25px;
     justify-content: center;
     background-color: #000000;
     margin-bottom: 38px;
-    box-shadow: 8px 8px 24px gray;
+    box-shadow: 4px 8px 24px rgb(218, 217, 217);
 }
     .banner{
     display: flex;
@@ -33,8 +34,9 @@
 .collapse{
     display: flex;
     flex-direction: column;
-    width: 1024px;
+    width: auto;
     padding-bottom: 30px;
+    max-width: 1024px;
 }
 
 .collapse__title{

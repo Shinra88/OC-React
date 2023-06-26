@@ -29,8 +29,9 @@ export function ImageBanner(props) {
     return(
 
     <div className="image__banner">
-        <button className="btn btn-next" onClick={moveNext}><FontAwesomeIcon icon={faChevronLeft} /></button>
-        <button className="btn btn-previous"onClick={movePrevious}><FontAwesomeIcon icon={faChevronRight} /></button>
+        <button className="btn btn-previous" onClick={movePrevious}><FontAwesomeIcon icon={faChevronLeft} /></button>
+        <span className="compteur">{currentPicture + 1} / {pictures.length}</span>
+        <button className="btn btn-next"onClick={moveNext}><FontAwesomeIcon icon={faChevronRight} /></button>
         {pictures.map((pic, i) => (
             <img key={pic} src={pic} alt="carrousel" className={getClassName(i)}></img>
         ))}

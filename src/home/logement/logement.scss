@@ -6,26 +6,38 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
+    @media screen and (max-width: 768px){
+        margin: 0px 10px 0px 10px;
+    }
 }
 
 .logement__contener{
     display: flex;
+    @media screen and (max-width: 530px){
+        flex-direction: column;
+    }
 }
 
 .logement__infos{
 display: flex;
 flex-direction: column;
-width: 50%;
+width: 60%;
+@media screen and (max-width: 530px){
+    width: 100%;
+}
 
     .logement__titre{
               
         color: #FF6060;
         h2, p{
-            font-size: 36px;
+            font-size: 4vw;
             font-weight: normal;
+            @media screen and (max-width: 530px){
+                font-size: 24px;
+            }
         }
         p{
-            font-size: 18px; 
+            font-size: 18px;
         }
     }
     
@@ -41,6 +53,9 @@ width: 50%;
         margin-right: 10px;
         margin-top: 10px;
         box-shadow: 4px 8px 24px gray;
+        @media screen and (max-width: 530px){
+            margin: 12px;
+        }
     }
 }
 
@@ -48,8 +63,13 @@ width: 50%;
 display: flex;
 flex-direction: column;
 justify-content: center;
-width: 50%;
+width: 40%;
 align-items: flex-end;
+@media screen and (max-width: 530px){
+    width: 95%;
+    flex-direction: row-reverse;
+    align-items: center;;
+}
 
     .logement__profil{
         display: flex;
@@ -74,16 +94,23 @@ align-items: flex-end;
     .logement__stars{
         display: flex;
         justify-content: flex-end;
-        padding: 20px 0px 0px 0px;
+        padding-top: 20px;
         font-size: 24px;
         height: 24px;
         width: 50%;
+        @media screen and (max-width: 530px){
+            width: 100%;
+            justify-content: flex-start;
+        }
 
         .off{
             padding-left: 15px;
             width: 24px;
-            height: 24px;
+            height: 20px;
             color: gray;
+            @media screen and (max-width: 530px){
+                width: 24px;
+            }
             }
             
         .on{
@@ -91,6 +118,9 @@ align-items: flex-end;
             width: 24px;
             height: 24px;
             color: #FF6060;
+            @media screen and (max-width: 530px){
+                width: 20px;
+            }
         }
     }
 }
@@ -99,21 +129,26 @@ align-items: flex-end;
     display: flex;
     padding-top: 50px;
     justify-content: space-between;
+    @media screen and (max-width: 530px){  
+        flex-direction: column;
+        
+    }
     
     
 
     .collapse.false{
         flex-basis: 47%;
         padding-bottom: 50px;
-    }
-
-    .collapse.title{
-        
+        @media screen and (max-width: 530px){
+            width: 100%;
+        }
     }
 
     .collapse.active{
-
         flex-basis: 47%;
+        @media screen and (max-width: 530px){
+            width: 100%;
+        }
     }
 }
 
