@@ -5,4 +5,7 @@ body {
     justify-content: center;
     margin: 0px;
     margin-inline: 100px 100px;
+    @media screen and (max-width: 375px){
+    margin-inline: 20px 20px;
+}
 }

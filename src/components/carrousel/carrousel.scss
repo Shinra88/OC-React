@@ -5,8 +5,11 @@
     width: 100%;
     height: 415px;
     border-radius: 25px;
+    
     @media screen and (max-width: 390px){
-        height: 280px;
+        height: 255px;
+        width: 335px;
+        margin-inline: 20px;
     }
     
     img{
