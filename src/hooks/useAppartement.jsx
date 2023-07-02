@@ -25,5 +25,5 @@ setIsLoading(false);
       abortController.abort();
       };
  }, [appartementId]);
-  return [appartement, isloading];
+  return [appartement, isloading, appartementId];
 };
