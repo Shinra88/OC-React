@@ -14,7 +14,7 @@ export function ImageBanner(props) {
     };
 
     const moveNext = () => {
-        setCurrentPicture((currentPicture + 1) % pictures.length);
+        setCurrentPicture(picture => (picture + 1) % pictures.length);
     };
 
     const movePrevious = () => {
@@ -23,15 +23,15 @@ export function ImageBanner(props) {
             setCurrentPicture(pictures.length - 1);
             return;
         }
-        setCurrentPicture(currentPicture - 1);
+        setCurrentPicture(picture => picture - 1);
     };
-    
+        
     return(
-
+ 
     <div className="image__banner">
-        <button className="btn btn-previous" onClick={movePrevious}><FontAwesomeIcon icon={faChevronLeft} /></button>
-        <span className="compteur">{currentPicture + 1} / {pictures.length}</span>
-        <button className="btn btn-next"onClick={moveNext}><FontAwesomeIcon icon={faChevronRight} /></button>
+        {pictures.length > 1 && <button className="btn btn-previous" onClick={movePrevious}><FontAwesomeIcon icon={faChevronLeft} /></button>}
+        {pictures.length > 1 && <span className="compteur">{currentPicture + 1} / {pictures.length}</span>}
+        {pictures.length > 1 && <button className="btn btn-next"onClick={moveNext}><FontAwesomeIcon icon={faChevronRight} /></button>}
         {pictures.map((pic, i) => (
             <img key={pic} src={pic} alt="carrousel" className={getClassName(i)}></img>
         ))}

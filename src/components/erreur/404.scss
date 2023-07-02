@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
-
 .error_contener{
     display: flex;
     justify-content: center;
@@ -7,7 +5,7 @@
     align-items: center;
     text-align: center;
     color: #FF6060;
-    line-height: 142.6%;
+    max-width: 1240px;
 
     .error_h2{
         font-family: 'Montserrat';

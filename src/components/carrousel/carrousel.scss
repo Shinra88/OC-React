@@ -5,18 +5,17 @@
     width: 100%;
     height: 415px;
     border-radius: 25px;
-    box-shadow: 4px 8px 24px gray;
     @media screen and (max-width: 390px){
         height: 280px;
     }
+    
     img{
        position: absolute;
        width: 100%;
        height: 100%;
        inset: 0;
        object-fit: cover;
-       border-radius: 25px;
-       //box-shadow: 0px 8px 24px gray; 
+       border-radius: 25px; 
        opacity: 0;
        &.show {
         opacity: 1;
@@ -51,6 +50,7 @@
        .btn-previous{
         left: 0;
        }
+
        .compteur{
         position: absolute;
         width: 100%;
@@ -59,7 +59,5 @@
         color: white;
         text-shadow: 1px 1px 2px black, 0 0 1em gray;
         bottom: 1rem;
-
-
        }
 }

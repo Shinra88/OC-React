@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import "./collapse.scss";
-import iconO from '../../asset/images/d_images/collapse_icon.png';
+import iconO from '../../asset/images/collapse_icon.svg';
 
 function Collapse({title, content }) {
     const [active, setActive] = useState(false)

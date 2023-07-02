@@ -1,15 +1,14 @@
-import Footer from '../../asset/images/d_images/d_footer.png';
+import Footer from '../../asset/images/footer.svg';
 import './footer.scss';
 
 function Dfooter() {
 return (
-        <footer>
-                <div className='footer'>
-                
-                        <img src={Footer} className="footer__img" alt="logo" />
-                
-                </div>
-        </footer>
+
+<footer>
+    <div className='footer'>
+        <img src={Footer} className="footer__img" alt="logo" />
+    </div>
+</footer>
         );
 }
 

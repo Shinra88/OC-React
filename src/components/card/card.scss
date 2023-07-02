@@ -1,6 +1,6 @@
 .card{
     position: relative;
-    border-radius: 1rem;
+    border-radius: 10px;
     display: flex;
     align-items:flex-end;
     min-width: 200px;
@@ -15,14 +15,11 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border-radius: 1rem;
-        box-shadow: 4px 8px 24px rgb(218, 217, 217);
-        // background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+        border-radius: 10px;
+    } 
     
-        
-    }
-
     .card__titre{
+        z-index: 1;
         display: flex;
         position: absolute;
         font-family: 'Montserrat';
@@ -32,4 +29,13 @@
         color: white;
         text-align: start;
     }
+}
+
+.card::before{
+    position: absolute;
+    content: "";
+    inset: 0;
+    border-radius: 10px;
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
