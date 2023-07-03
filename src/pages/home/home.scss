@@ -1,11 +1,12 @@
 main{
     display: flex;
     flex-direction: column;
-    max-width: 1240px;
-    @media screen and (max-width: 560px){
-        margin-inline: 20px 20px;
+    margin-inline: 100px;
+    @media screen and (max-width: 845px){
+    margin-inline: 20px;
     }
 }
+
     .bannerH{
         z-index: 2;
         max-width: 1240px;
@@ -19,6 +20,7 @@ main{
         border-radius: 25px;
         @media screen and (max-width: 530px){
             min-height: 111px;
+            border-radius: 10px;
         }
     }
 
@@ -49,6 +51,9 @@ main{
         border-radius: 25px;
         background-color: black;
         mix-blend-mode: darken;
+        @media screen and (max-width: 530px){
+            border-radius: 10px;
+        }
     }
 
     .home-Contener{
@@ -64,6 +69,8 @@ main{
         }
         @media screen and (max-width: 690px){
             grid-template-columns: 1fr;
+            background: none;
+            padding: 0% 0% 6% 0%;
         }
     }
    
