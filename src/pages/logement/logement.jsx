@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { ImageBanner } from '../../components/carrousel/carrousel';
 import { useAppartement } from "../../hooks/useAppartement";
-import Error from "../../components/erreur/404";
+import Error from "../erreur/404";
 import Loading from "../../components/loading/loading";
 
 

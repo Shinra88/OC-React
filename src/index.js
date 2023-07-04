@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Logement from './pages/logement/logement';
 import Header from './components/header/header';
 import Footer from './components/footer/footer';
-import Error from './components/erreur/404';
+import Error from './pages/erreur/404';
 import Apropos from './pages/apropos/apropos';
 import "./style.scss";
 import { createRoot } from 'react-dom/client';
