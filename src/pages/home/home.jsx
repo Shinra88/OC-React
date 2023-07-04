@@ -10,7 +10,7 @@ const appartements = useAppartements();
   return (
       <main className="home">
         <div className="bannerH">
-          <h1 className='banner_titre'>Chez vous, partout et ailleurs</h1>
+          <h1 className='banner_titre'><span> Chez vous,</span> <span> partout et ailleurs</span></h1>
         </div>
         <div className='home-Contener'>
            {appartements.map((appartement) => (

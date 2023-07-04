@@ -3,7 +3,11 @@ width: 100%;
 background-color: black;
 margin: 0px;
 
+
 .footer__img{
+    display: flex;
     width: 100%;
+    object-fit: cover;
+    min-height: 209px;
     }
 }
