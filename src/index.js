@@ -13,7 +13,6 @@ import { createRoot } from 'react-dom/client';
 const container = document.getElementById('root');
 const root = createRoot(container);
 root.render(
-<React.StrictMode>
   <Router>
     <Header />
       <Routes>
@@ -24,6 +23,5 @@ root.render(
         <Route path="*" element={ <Navigate to="/404" /> } />
       </Routes>
       <Footer />
-    </Router>
-</React.StrictMode>,
+    </Router>,
 );
