@@ -1,5 +1,5 @@
-import DFooter from '../../asset/images/footer.svg';
-import Mfooter from '../../asset/images/M_footer.svg';
+import DFooter from '../../asset/images/footer.webp';
+import Mfooter from '../../asset/images/M_footer.webp';
 import './footer.scss';
 
 function Footer() {

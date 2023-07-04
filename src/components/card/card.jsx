@@ -4,7 +4,7 @@ import "./card.scss";
 import { NavLink } from 'react-router-dom';
 
 function Card(props) {
-    const slug = `${props.id}-${props.title.toLowerCase().replace(/\s/g, '-')}`
+    // const slug = `${props.id}-${props.title.toLowerCase().replace(/\s/g, '-')`}
 
 return (
     <NavLink to={`/Logement/${props.id}`}>

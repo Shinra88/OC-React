@@ -9,8 +9,7 @@ import Loading from "../../components/loading/loading";
 
 
 function Logement() {
-  const [Appartement, isloading] = useAppartement(); // destructuring objet js
-
+  const [Appartement, isloading] = useAppartement();
   if (isloading === true) {
     return <Loading />
   }

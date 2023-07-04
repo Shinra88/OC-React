@@ -1,6 +1,6 @@
 import './apropos.scss';
 import Collapse from '../../components/collapse/collapse';
-import AproposBanner from '../../asset/images/apropos_banner.svg';
+import AproposBanner from '../../asset/images/apropos_banner.webp';
 
 function Apropos() {
     return (
