@@ -9,17 +9,16 @@ import Loading from "../../components/loading/loading";
 
 
 function Logement() {
-  const [Appartement, isloading, appartementId] = useAppartement(); // destructuring objet js
+  const [Appartement, isloading] = useAppartement(); // destructuring objet js
 
   if (isloading === true) {
-    return Loading()
+    return <Loading />
   }
 
   if (!Appartement) { 
     return <Error /> 
   }
-  
- if ( Appartement.id === appartementId) {
+
   return (
 
     <div className="logement">
@@ -59,6 +58,6 @@ function Logement() {
           </div>
     </div>
   );
-}}
+}
 
 export default Logement;
