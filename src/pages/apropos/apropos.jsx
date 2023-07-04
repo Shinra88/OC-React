@@ -1,8 +1,15 @@
 import './apropos.scss';
 import Collapse from '../../components/collapse/collapse';
 import AproposBanner from '../../asset/images/apropos_banner.webp';
+import { useNavigate } from 'react-router-dom';
 
 function Apropos() {
+  const navigate = useNavigate();
+
+  if (!"/apropos") { 
+    return navigate("/404") 
+  }
+
     return (
       <div className="apropos">
         <div className='apropos_banner'>
