@@ -10,7 +10,13 @@
     
 }
 
-    .logo_contener{
+    .logo{
+        min-width: 140px;
+        max-width: 220px;
+        min-height: 38px;
+        max-height: 65px;
+
+    }.logo_contener{
         width: 20%;
         .logo{
             width: 20vw;
