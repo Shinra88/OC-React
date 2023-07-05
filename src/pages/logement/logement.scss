@@ -28,8 +28,8 @@
 
     .logement__titre{ 
         color: #FF6060;
-        h2, p{
-            font-size: 4vw;
+        h2{
+            font-size: 36px;
             font-weight: normal;
             margin: 10px 10px 10px 0px;
             @media screen and (max-width: 845px){
@@ -38,6 +38,9 @@
         }
         p{
             font-size: 18px;
+            @media screen and (max-width: 845px){
+                font-size: 14px;
+            }
         }
     }
     
